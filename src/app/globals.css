@@ -8,7 +8,6 @@
   --color-secondary: 17, 17, 17; /* #111111 noir */
   --color-tertiary : 112, 112, 112; /* #707070 gris */
 
-
   --radius-sm: 0.625rem; /* 10px */
   --radius-md: 1.25rem;  /* 20px */
   --radius-xl: 2.5rem;   /* 40px */
@@ -45,12 +44,16 @@
 
 @layer utilities{
   .typo-xl      { font-size: var(--text-xl);      line-height: var(--lh-100); font-weight: var(--fw-semibold); } /* 28px */
-  .typo-lg      { font-size: var(--text-lg);      line-height: var(--lh-100); font-weight: var(--fw-semibold); } /* 22px */
+  .typo-lg      { font-size: var(--text-lg);      line-height: var(--lh-100); font-weight: var(--fw-medium); } /* 22px */
 
   .typo-base { font-size: var(--text-base);       line-height: var(--lh-100); font-weight: var(--fw-medium); } /* 16px */
   .typo-sm    { font-size: var(--text-sm);        line-height: var(--lh-100); font-weight: var(--fw-regular); } /* 14px */
   .typo-xs { font-size: var(--text-xs);           line-height: var(--lh-100); font-weight: var(--fw-regular); } /* 12px */
 
+
+  .sr-only {
+    @apply absolute w-1 h-1 p-0 -m-1 overflow-hidden whitespace-nowrap border-0;
+  }
 }
 
 
@@ -76,6 +79,9 @@
     rgb(var(--background)) 40%)
   }
 
+  .card {
+    @apply rounded-sm bg-foreground
+  }
 
 }
 

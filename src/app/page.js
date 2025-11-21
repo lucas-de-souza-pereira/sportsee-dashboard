@@ -1,6 +1,5 @@
-// import { redirect } from 'next/navigation';
+import { redirect } from 'next/navigation';
 
-// export default function RootPage() {
-//   // redirige immédiatement vers /login
-//   redirect('/login');
-// }
+export default function RootPage() {
+  redirect('/login');
+}
