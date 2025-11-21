@@ -4,7 +4,6 @@ import Logo from "@/components/ui/Logo";
 import Footer from "@/components/footer/Footer";
 
 import Link from "next/link";
-import { Fragment } from "react";
 
 export default function NotFound(){
     return(
